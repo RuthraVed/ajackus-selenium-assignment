@@ -34,7 +34,7 @@ public class PropertyCapsule_Homepage_test {
 	}
 	
 
-	@Test(enabled  = true)
+	@Test(enabled = true)
 	public void verifylogoIsVisible() {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
 		boolean actual = p.logoIsVisible();
@@ -43,7 +43,7 @@ public class PropertyCapsule_Homepage_test {
 
 	}
 	
-	@Test(enabled  = true)
+	@Test(enabled = true)
 	public void verifymarketingAutomationTabRedirection() throws InterruptedException {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
 		boolean actual = p.marketingAutomationTabRedirection("https://www.propertycapsule.com/");
@@ -51,7 +51,7 @@ public class PropertyCapsule_Homepage_test {
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test(enabled  = true)
+	@Test(enabled = true)
 	public void verifymapMakerTabRedirection() {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
 		boolean actual = p.mapMakerTabRedirection("https://maps.propertycapsule.com/");
@@ -62,12 +62,12 @@ public class PropertyCapsule_Homepage_test {
 	@Test(enabled = true)
 	public void verifytourbooksTabRedirection() throws InterruptedException {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
-		boolean actual = p.tourbooksTabredirection("https://tours.propertycapsule.com/");
+		boolean actual = p.tourbooksTabRedirection("https://tours.propertycapsule.com/");
 		boolean expected = true;
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test(enabled  = true)
+	@Test(enabled = true)
 	public void verifyenterpriseAdminLoginRedirection() throws InterruptedException {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
 		boolean actual = p.enterpriseAdminLoginRedirection("https://propertycapsule.com/property/admin/login/form");
@@ -75,10 +75,26 @@ public class PropertyCapsule_Homepage_test {
 		Assert.assertEquals(actual, expected);
 	}
 	
-	@Test(enabled  = true)
+	@Test(enabled = true)
 	public void verifydealMakerLoginRedirection() throws InterruptedException {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
 		boolean actual = p.dealMakerLoginRedirection("https://maps.propertycapsule.com/map/sign-up");
+		boolean expected = true;
+		Assert.assertEquals(actual, expected);
+	}
+	
+	@Test(enabled  = true)
+	public void verifyrequestDemoHyperlinkRedirection() throws InterruptedException {
+		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
+		boolean actual = p.requestDemoHyperlinkRedirection();
+		boolean expected = true;
+		Assert.assertEquals(actual, expected);
+	}
+	
+	@Test(enabled = true)
+	public void verifyfindOutMoreHyperlinkRedirection() throws InterruptedException {
+		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
+		boolean actual = p.findOutMoreHyperlinkRedirection("https://www.vts.com/propertycapsule");
 		boolean expected = true;
 		Assert.assertEquals(actual, expected);
 	}
