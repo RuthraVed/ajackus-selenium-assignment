@@ -12,6 +12,9 @@ Property Capsule's homepage at https://www.propertycapsule.com :-
 4. Verify the Tourbooks tab is visible and clickable
 5. Verify on clicking the “Enterprise Admin Login” button, redirects to a login form
 6. Verify on clicking the “DealMaker Signup/Login” button, redirects to a login form
+7. Verify on clicking the hyper-link “Find out more” redirects to homepage of VTS company
+8. Verify on clicking the hyper-link “request a demo” shows a contact form, without redirecting to any other webpage
+
 
 ### Technologies Used
 * Selenium Webdriver
