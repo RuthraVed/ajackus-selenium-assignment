@@ -62,7 +62,7 @@ public class PropertyCapsule_Homepage_test {
 	@Test(enabled = true)
 	public void verifytourbooksTabRedirection() throws InterruptedException {
 		PropertyCapsule_Homepage p = new PropertyCapsule_Homepage(driver);
-		boolean actual = p.tourbooksTabredirection("https://tours.propertycapsule.com/");
+		boolean actual = p.tourbooksTabRedirection("https://tours.propertycapsule.com/");
 		boolean expected = true;
 		Assert.assertEquals(actual, expected);
 	}

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-19T07:31:02 IST" name="Suite" finished-at="2020-11-19T07:37:11 IST" duration-ms="368914">
+  <suite started-at="2020-11-19T08:40:30 IST" name="Default suite" finished-at="2020-11-19T08:42:10 IST" duration-ms="99631">
     <groups>
     </groups>
-    <test started-at="2020-11-19T07:31:02 IST" name="FFTEst" finished-at="2020-11-19T07:37:11 IST" duration-ms="368914">
+    <test started-at="2020-11-19T08:40:30 IST" name="Default test" finished-at="2020-11-19T08:42:10 IST" duration-ms="99631">
       <class name="com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@3c87521]" started-at="2020-11-19T07:31:03 IST" name="setup" finished-at="2020-11-19T07:37:06 IST" duration-ms="363529" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:40:30 IST" name="setup" finished-at="2020-11-19T08:41:02 IST" duration-ms="32155" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[ChromeBrowser]]>
               </value>
             </param>
             <param index="1">
@@ -20,150 +20,138 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 288.972
-  (Session info: chrome=86.0.4240.111)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ruthra-Vostro-3458', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-53-generic', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.p0lSYk}, goog:chromeOptions: {debuggerAddress: localhost:42843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f32fed6bc452de68e9d26f6a09b233b3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 288.972
-  (Session info: chrome=86.0.4240.111)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ruthra-Vostro-3458', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-53-generic', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.p0lSYk}, goog:chromeOptions: {debuggerAddress: localhost:42843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f32fed6bc452de68e9d26f6a09b233b3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test.setup(PropertyCapsule_Homepage_test.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifytourbooksTabRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@3c87521]" started-at="2020-11-19T07:37:10 IST" name="verifytourbooksTabRedirection" finished-at="2020-11-19T07:37:10 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 288.972
-  (Session info: chrome=86.0.4240.111)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ruthra-Vostro-3458', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-53-generic', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.p0lSYk}, goog:chromeOptions: {debuggerAddress: localhost:42843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f32fed6bc452de68e9d26f6a09b233b3]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 288.972
-  (Session info: chrome=86.0.4240.111)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ruthra-Vostro-3458', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-53-generic', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /tmp/.com.google.Chrome.p0lSYk}, goog:chromeOptions: {debuggerAddress: localhost:42843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f32fed6bc452de68e9d26f6a09b233b3
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test.setup(PropertyCapsule_Homepage_test.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="verifydealMakerLoginRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:02 IST" name="verifydealMakerLoginRedirection" finished-at="2020-11-19T08:41:15 IST" duration-ms="12259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydealMakerLoginRedirection -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:15 IST" name="tearup" finished-at="2020-11-19T08:41:15 IST" duration-ms="911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:16 IST" name="setup" finished-at="2020-11-19T08:41:30 IST" duration-ms="14006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeBrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.propertycapsule.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyenterpriseAdminLoginRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:30 IST" name="verifyenterpriseAdminLoginRedirection" finished-at="2020-11-19T08:41:33 IST" duration-ms="3680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyenterpriseAdminLoginRedirection -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:33 IST" name="tearup" finished-at="2020-11-19T08:41:33 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:33 IST" name="setup" finished-at="2020-11-19T08:41:37 IST" duration-ms="3585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeBrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.propertycapsule.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifylogoIsVisible()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:37 IST" name="verifylogoIsVisible" finished-at="2020-11-19T08:41:37 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogoIsVisible -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:37 IST" name="tearup" finished-at="2020-11-19T08:41:38 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:38 IST" name="setup" finished-at="2020-11-19T08:41:43 IST" duration-ms="5311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeBrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.propertycapsule.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifymapMakerTabRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:43 IST" name="verifymapMakerTabRedirection" finished-at="2020-11-19T08:41:49 IST" duration-ms="5964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymapMakerTabRedirection -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:49 IST" name="tearup" finished-at="2020-11-19T08:41:49 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:49 IST" name="setup" finished-at="2020-11-19T08:41:56 IST" duration-ms="7232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeBrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.propertycapsule.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifymarketingAutomationTabRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:56 IST" name="verifymarketingAutomationTabRedirection" finished-at="2020-11-19T08:41:58 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymarketingAutomationTabRedirection -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:58 IST" name="tearup" finished-at="2020-11-19T08:41:58 IST" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:41:58 IST" name="setup" finished-at="2020-11-19T08:42:04 IST" duration-ms="6405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ChromeBrowser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.propertycapsule.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifytourbooksTabRedirection()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:42:04 IST" name="verifytourbooksTabRedirection" finished-at="2020-11-19T08:42:09 IST" duration-ms="5030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytourbooksTabRedirection -->
-        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@3c87521]" started-at="2020-11-19T07:37:10 IST" name="tearup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1605751630227" status="SKIP">
+        <test-method is-config="true" signature="tearup()[pri:0, instance:com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test@48524010]" started-at="2020-11-19T08:42:09 IST" name="tearup" finished-at="2020-11-19T08:42:10 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
       </class> <!-- com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test -->
-    </test> <!-- FFTEst -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

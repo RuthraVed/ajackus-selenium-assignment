@@ -76,6 +76,45 @@ public class PropertyCapsule_Homepage
 		return elementIsVisible(dealMakerLoginBtn);
 	}
 
+	public boolean findOutMoreHyperlinkVisible() {
+		return elementIsVisible(findOutMoreHyperlink);
+	}
+
+	public boolean requestDemoHyperlinkVisible() {
+		return elementIsVisible(requestDemoHyperlink);
+	}
+
+
+	public boolean newTabWindowHandler(WebDriver driver,String expectedURL){
+		Set<String> windowHandles = driver.getWindowHandles();
+		logger.info("Number of opened windows: " + windowHandles.size());
+
+		int temp=0;
+		//Iterate through all the available windows
+		for (String string : windowHandles) {
+			driver.switchTo().window(string);
+			String newtabURL = driver.getCurrentUrl();
+
+			//check whether the url post switch is the desired page
+			if (newtabURL.equals(expectedURL)) {
+				temp = 1;
+				driver.switchTo().defaultContent();
+				break;
+			} else {
+				temp = 0;
+			}
+		}
+		if (temp == 1) {
+			logger.info("Redirection successful.");
+			return true;
+		}
+		else if (temp == 0) {
+			logger.info("Redirection unsuccessful.");
+			return false;
+		}
+		return false;
+	}
+
 	public boolean marketingAutomationTabRedirection(String expectedURL) throws InterruptedException {
 		BasicConfigurator.configure();
 		logger.info("Executing marketingAutomationTabRedirection()...");
@@ -104,72 +143,22 @@ public class PropertyCapsule_Homepage
 
 			driver.findElement(mapMakerTab).click();
 
-			Set<String> windowHandles = driver.getWindowHandles();
-			logger.info("Number of opened windows: " + windowHandles.size());
-
-			int temp=0;
-			//Iterate through all the available windows
-			for (String string : windowHandles) {
-				driver.switchTo().window(string);
-				String newtabURL = driver.getCurrentUrl();
-
-				//check whether the url post switch is the desired page
-				if (newtabURL.equals(expectedURL)) {
-					temp = 1;
-					driver.switchTo().defaultContent();
-					break;
-				} else {
-					temp = 0;
-				}
-			}
-			if (temp == 1) {
-				logger.info("Redirection successful.");
-				return true;
-			}
-			else if (temp == 0) {
-				logger.info("Redirection unsuccessful.");
-				return false;
-			}
+			return newTabWindowHandler(driver,expectedURL);
 		}
 		return false;
 	}
 
 
-	public boolean tourbooksTabredirection(String expectedURL) {
+	public boolean tourbooksTabRedirection(String expectedURL) {
 		BasicConfigurator.configure();
-		logger.info("Executing tourbooksTabredirection()...");
+		logger.info("Executing tourbooksTabRedirection()...");
 
-		if(mapMakerTabIsVisible()) {
+		if(tourbooksTabIsVisible()) {
 			logger.info("Found tourbooksTab.");
 
 			driver.findElement(tourbooksTab).click();
 
-			Set<String> windowHandles = driver.getWindowHandles();
-			logger.info("Number of opened windows: " + windowHandles.size());
-
-			int temp=0;
-			//Iterate through all the available windows
-			for (String string : windowHandles) {
-				driver.switchTo().window(string);
-				String newtabURL = driver.getCurrentUrl();
-
-				//check whether the url post switch is the desired page
-				if (newtabURL.equals(expectedURL)) {
-					temp = 1;
-					driver.switchTo().defaultContent();
-					break;
-				} else {
-					temp = 0;
-				}
-			}
-			if (temp == 1) {
-				logger.info("Redirection successful.");
-				return true;
-			}
-			else if (temp == 0) {
-				logger.info("Redirection unsuccessful.");
-				return false;
-			}
+			return newTabWindowHandler(driver,expectedURL);
 		}
 		return false;
 	}
@@ -179,7 +168,7 @@ public class PropertyCapsule_Homepage
 		BasicConfigurator.configure();
 		logger.info("Executing enterpriseAdminLoginRedirection()...");
 
-		if(marketingAutomationTabIsVisible()) {
+		if(enterpriseAdminLoginVisible()) {
 			logger.info("Found enterpriseAdminLoginBtn.");
 
 			driver.findElement(enterpriseAdminLoginBtn).click();
@@ -194,13 +183,38 @@ public class PropertyCapsule_Homepage
 		BasicConfigurator.configure();
 		logger.info("Executing dealMakerLoginRedirection()...");
 
-		if(marketingAutomationTabIsVisible()) {
+		if(dealMakerLoginVisible()) {
 			logger.info("Found dealMakerLoginBtn.");
 
 			driver.findElement(dealMakerLoginBtn).click();
-			String actualURL = driver.getCurrentUrl();
-			return expectedURL.equals(actualURL);
 
+			return newTabWindowHandler(driver,expectedURL);
+		}
+		return false;
+	}
+
+	public boolean findOutMoreHyperlinkRedirection(String expectedURL) {
+		BasicConfigurator.configure();
+		logger.info("Executing findOutMoreHyperlinkRedirection...");
+
+		if(findOutMoreHyperlinkVisible()) {
+			logger.info("Found findOutMoreHyperlink.");
+			driver.findElement(findOutMoreHyperlink).click();
+			
+			return newTabWindowHandler(driver,expectedURL);
+		}
+		return false;
+	}
+	
+	public boolean requestDemoHyperlinkRedirection(String expectedURL) {
+		BasicConfigurator.configure();
+		logger.info("Executing requestDemoHyperlinkRedirection()...");
+
+		if(requestDemoHyperlinkVisible()) {
+			logger.info("Found requestDemoHyperlink.");
+			driver.findElement(requestDemoHyperlink).click();
+			
+			return newTabWindowHandler(driver,expectedURL);
 		}
 		return false;
 	}
