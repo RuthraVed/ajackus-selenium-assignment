@@ -3,7 +3,7 @@
 <suite parallel="false" name="Suite">
 	<!--  Test  -->
 	<test name="FFTEst">
-		<parameter name="browserName" value="Chrome" />
+		<parameter name="browserName" value="ChromeBrowser" />
 		<parameter name="url" value="https://www.propertycapsule.com/" />
 		<classes>
 			<class name="com.propertycapsule.selenium.testcases.PropertyCapsule_Homepage_test" />

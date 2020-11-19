@@ -44,23 +44,37 @@ public class PropertyCapsule_Homepage
 		driver=driver2;
 	}
 
-	public boolean logoIsVisible() {
+	public boolean elementIsVisible(By elementName) {
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(logoImage));
-		if(driver.findElement(logoImage).isDisplayed())
-			return true;
-		return false;
+		wait.until(ExpectedConditions.visibilityOfElementLocated(elementName));
+		return driver.findElement(elementName).isDisplayed();
+
+	}
+
+	public boolean logoIsVisible() {
+		return elementIsVisible(logoImage);
 	}
 
 
 	public boolean marketingAutomationTabIsVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(marketingAutomationTab));
-		if(driver.findElement(marketingAutomationTab).isDisplayed())
-			return true;
-		return false;
+		return elementIsVisible(marketingAutomationTab);
 	}
 
+	public boolean mapMakerTabIsVisible() {
+		return elementIsVisible(mapMakerTab);
+	}
+
+	public boolean tourbooksTabIsVisible() {
+		return elementIsVisible(tourbooksTab);
+	}
+
+	public boolean enterpriseAdminLoginVisible() {
+		return elementIsVisible(enterpriseAdminLoginBtn);
+	}
+
+	public boolean dealMakerLoginVisible() {
+		return elementIsVisible(dealMakerLoginBtn);
+	}
 
 	public boolean marketingAutomationTabRedirection(String expectedURL) throws InterruptedException {
 		BasicConfigurator.configure();
@@ -80,13 +94,6 @@ public class PropertyCapsule_Homepage
 		return false;
 	}
 
-	public boolean mapMakerTabIsVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(mapMakerTab));
-		if(driver.findElement(mapMakerTab).isDisplayed())
-			return true;
-		return false;
-	}
 
 	public boolean mapMakerTabRedirection(String expectedURL) {
 		BasicConfigurator.configure();
@@ -127,13 +134,6 @@ public class PropertyCapsule_Homepage
 		return false;
 	}
 
-	public boolean tourbooksTabIsVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(tourbooksTab));
-		if(driver.findElement(tourbooksTab).isDisplayed())
-			return true;
-		return false;
-	}
 
 	public boolean tourbooksTabredirection(String expectedURL) {
 		BasicConfigurator.configure();
@@ -175,14 +175,6 @@ public class PropertyCapsule_Homepage
 	}
 
 
-	public boolean enterpriseAdminLoginVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(enterpriseAdminLoginBtn));
-		if(driver.findElement(enterpriseAdminLoginBtn).isDisplayed())
-			return true;
-		return false;
-	}
-
 	public boolean enterpriseAdminLoginRedirection(String expectedURL) throws InterruptedException {
 		BasicConfigurator.configure();
 		logger.info("Executing enterpriseAdminLoginRedirection()...");
@@ -195,14 +187,6 @@ public class PropertyCapsule_Homepage
 			return expectedURL.equals(actualURL);
 
 		}
-		return false;
-	}
-
-	public boolean dealMakerLoginVisible() {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(dealMakerLoginBtn));
-		if(driver.findElement(dealMakerLoginBtn).isDisplayed())
-			return true;
 		return false;
 	}
 
